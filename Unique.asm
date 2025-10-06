@@ -15,17 +15,14 @@
 %endmacro
 
 section .data
-    msg1 db "Enter first number", 10
+    msg1 db "Enter first number: ", 10
     len1 equ $-msg1
 
-    msg2 db "Enter second number", 10
+    msg2 db "Enter second number: ", 10
     len2 equ $-msg2
 
-    msg3 db "The remainder is: ", 10
+    msg3 db "The sum is: ", 10
     len3 equ $-msg3
-
-    msg4 db "The quotient is: ", 10
-    len4 equ $-msg4
 
 section .bss
     a resq 1
@@ -108,4 +105,3 @@ add30:
 
     WRITE char_buff, 16
     ret
-
